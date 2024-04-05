@@ -1,0 +1,29 @@
+{
+  "fileName": "id_1703670536554",
+  "namespace": "apps/pise.mi.plm.bom/appVariants/customer.MaintainBillOfMaterialExt/changes",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "change",
+  "creation": "2023-12-27T09:48:56.554Z",
+  "packageName": "$TMP",
+  "reference": "customer.MaintainBillOfMaterialExt",
+  "support": {
+    "generator": "add-odata-service-and-model-generator"
+  },
+  "changeType": "appdescr_ui5_addNewModel",
+  "content": {
+    "dataSource": {
+      "customer.ext": {
+        "uri": "/sap/opu/odata/sap/ZIN2REP_E_700_BOM_LIST_SRV/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0"
+        }
+      }
+    },
+    "model": {
+      "customer.ext": {
+        "dataSource": "customer.ext"
+      }
+    }
+  }
+}

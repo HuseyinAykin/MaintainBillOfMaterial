@@ -1,0 +1,53 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<Dialog title="{i18n>eSignTitle}" draggable="true" >
+	<VBox>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"			
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label text="{i18n>comment}"/>
+				<TextArea rows="3"></TextArea>
+					<!-- <l:VerticalLayout
+		class="sapUiContentPadding"
+		width="100%">
+
+		<l:content>
+		<Label></Label>
+				<MessageStrip
+				text="{i18n>digitalSignInfo}"
+				showIcon="true"
+				showCloseButton="true"
+				class="sapUiMediumMarginBottom"></MessageStrip>
+				</l:content>
+				</l:VerticalLayout> -->
+				<Label text="{i18n>remark}"/>
+				<ComboBox ></ComboBox>
+				<Label text="{i18n>signatory}"/>
+				<Input value="{viewModel>/UserName}"/>
+				<Label text="{i18n>name}"/>
+				<Text text="{viewModel>FullName}"/>
+				<Label text="{i18n>password}"/>
+				<Input type="Password"></Input> 
+				</f:content>				
+		</f:SimpleForm>
+		</VBox>
+		<buttons>
+		<Button text="{i18n>save}" press="onSaveESignature"></Button>
+		<Button text="{i18n>cancel}" press="onCloseDialog"></Button></buttons>
+
+    	</Dialog>
+</core:FragmentDefinition>

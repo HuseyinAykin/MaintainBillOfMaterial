@@ -1,0 +1,11 @@
+{
+  "componentname": "pise.mi.plm.bom",
+  "safeMode": false,
+  "appvariant": "MaintainBillOfMaterialExt",
+  "layer": "CUSTOMER_BASE",
+  "sourceSystem": "S4HBS4120",
+  "isOVPApp": false,
+  "isFioriElement": true,
+  "environment": "ABAP",
+  "ui5Version": "1.84.39"
+}
